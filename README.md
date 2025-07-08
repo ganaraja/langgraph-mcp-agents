@@ -93,35 +93,6 @@ If you don't want to use the login feature, set `USE_LOGIN` to `false`.
 USE_LOGIN=false
 ```
 
-## Build Up the Codebase
-
-
-1. Let's identify the "To Do:" tasks to enrich the template to set up the MCP server and tst out the Agentic AI application.
-
-2. Import the underying data source. (mcp_server_remote.py; Line 5)
-
-![Import Data asset](./assets/Import_data_asset.png)
-
-3. Add the MCP server instruction to be used accross various agent development, feel free to use the smaple instruction to being with provided below. (mcp_server_remote.py; Line 20)
-
-#### MCP server instruction starters:
-
-"You are a Zwigato customer support assistant for food delivery. "
-"Use the available tools to help customers with their Zwigato orders and queries. "
-"If a customer asks about Zwigato services, policies (like cancellation, refunds), or membership (like Zwigato Gold), use the 'search_wiki' tool. "
-"If a customer asks about their order status, use the 'read_order_status' tool with their order ID (e.g., ORDZW001). "
-"If a customer wants to cancel an order, use the 'update_order_status' tool. For cancellations, set the new_status to 'cancelled'. "
-"Be polite and helpful."
-
-![MCP server creation](./assets/MCP_server_creation.png)
-
-
-4. Import the various agents/ MCP tools. (app.py; Line 45 & Line 52)
-
-
-![MCP server import](./assets/import_mcp_servers.png)
-
-
 ## Usage
 
 1. Start the Streamlit application.
